@@ -1,0 +1,117 @@
+<html>
+<head>
+<title> transition  </title>
+<meta charset="utf-8" />
+<style>
+	/*
+	#outer {
+		width: 800px; height: 800px;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	#outer2 {
+		width: 800px; height: 800px;
+		margin: 0 auto;
+		overflow: hidden;
+		border: 1px solid tomato;
+		position: relative;
+	}
+	
+	#outer2 > .card {
+		width: 60px; height: 70px;
+		float: left;
+		border: 1px solid black;
+		position: absolute;
+		top: 70%;
+		margin-left: 370px
+	}
+	
+	#outer2 .card2 {
+		clear: both;
+		position: absolute;
+		top: 80%;
+		margin-left: 100px
+	}
+	
+	#id:active {
+		
+	}
+	*/
+	
+	/*
+	#outer > div {
+		width: 200px; height: 200px;
+		background: red;
+		
+		animation: myani 3s infinite alternate;
+	}
+	
+
+	*/	
+	
+	#outer {
+		width: 600px; height: 700px;
+		margin: 0 auto;
+		font-size: 30px;
+		font-weight: bold;
+		border: 1px solid black;
+		text-align: center;
+	}
+	
+	#outer2 {
+		position: relative;
+		width: 600px; height: 700px;
+	}
+	
+	#outer2 [class] { 
+		width: 200px; height: 200px; 
+		position: absolute; 
+		left: 200px; top: 400px;
+	}
+	
+	#mix {
+		position: absolute; 
+		left: 400px; top: 460px;
+	}
+
+
+	/*
+	#back1 {
+		animation: back1 4s; 
+		animation-fill-mode: forwards;
+		position: absolute;
+	}
+	*/
+	
+	@keyframes back1 {
+		from { left: 200px; top: 400px; }
+		to { left: 100px; top: 100px; }
+	} 
+    
+
+</style>
+<script type="text/javascript">
+	function mixBtn_click() {
+		alert("hi");
+		var div = document.getElementById("back1");
+		div.style.animation = "back1 4s";
+	}
+
+</script>
+</head>
+
+<body>
+
+<div id="outer">
+	<p> tarot 보기 </p>
+    <div id="outer2">
+    	<div id="back1" class="card"><img src="../images/tarot_back.jpg" width="100px" height="200px"/></div>
+	    <div id="back2" class="card"><img src="../images/tarot_back.jpg" width="100px" height="200px"/></div>
+	    <div id="back3" class="card"><img src="../images/tarot_back.jpg" width="100px" height="200px"/></div>
+	    <div id="mix"> <input type="button" id="mixBtn" value="섞기" onclick="mixBtn_click()"></div>
+    </div>
+</div>
+</body>
+</html>

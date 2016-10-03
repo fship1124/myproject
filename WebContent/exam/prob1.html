@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.content {
+		width: 700px;
+	}
+	
+	.key {
+		display:inline-block;
+		width:150px;
+		background: gray;
+		height: 30px;
+	}
+	
+	.text {
+		margin: 5px;
+		border : none;
+		border-bottom: 5px solid black;
+	}
+	
+	.addr {
+		width: 500px;
+	}
+	
+	.sub {
+		margin: 0 auto;
+	}
+	
+/* 	input { */
+/* 		margin: 5px; */
+/* 		text-decoration: underline; */
+/* 	} */
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="top">
+			회원 정보 입력하기
+			<hr>
+		</div>
+		<div id="content">
+			<form>
+				<div class="detail">
+					<span class="key">아 이 디</span><input type="text" class="text"><br>
+				</div>
+				
+				<span class="key">비밀번호</span><input type="password" class="text"><br>
+				<span class="key">아 이 디</span><input type="text" class="text"><br>
+				<span class="key">비밀번호 확인</span><input type="password" class="text"><br>
+				<span class="key">전 화 번 호</span><input type="text" class="text"><br>
+				<span class="key">주 소</span><input type="text" class="text addr"><br>
+				<hr>
+				
+				<div id="button" align="center">
+				<button type="submit">등록하기</button>
+				<button type="reset">새로쓰기</button>
+				</div>
+		
+			</form>
+			
+		</div>
+					
+	</div>
+</body>
+</html>

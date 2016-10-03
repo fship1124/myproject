@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	
+	ul {
+		list-style: none;
+	}
+	
+	
+	ul > li {
+		width: 100px; height: 200px;
+		float: left;
+		margin: 30px;
+	}
+	
+	.break {
+		clear: both;
+	}
+	
+	#container li:NTH-CHILD(3n + 1) {	background-color: yellow }
+	#container li:NTH-CHILD(3n + 2) {	background-color: skyblue }
+	#container li:NTH-CHILD(3n) {	background-color: gray }
+</style>
+</head>
+<body>
+	<div id="container">
+		<ul>
+			<li class="content1">안녕</li>
+			<li class="content1"><div>오늘은 CSS 종료하는 날</div></li>
+			<li class="content1"><div>행복한</div></li>
+			<li><div>불금</div></li>
+			<li class="break">해피</li>
+			<li class="content2"><div>주말</div></li>
+		</ul>
+	</div>
+</body>
+</html>

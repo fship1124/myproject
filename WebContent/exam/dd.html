@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("img").on("click", function() {
+			var src = $(this).attr('src');
+			var bigImgSrc = $("#img1").attr('src');
+			
+			$("#img1").attr('src', src);
+			$(this).attr('src', bigImgSrc);
+		});
+	});
+</script>
+</head>
+<body>
+
+<div id="d1"> 
+   <div class="c1"> 
+       <a href="#"><img id="img1" src="../images/free.jpg" width="100px"></a> 
+       <a href="#"><img id="img2" src="../images/god.jpg" width="100px"></a> 
+       <a href="#"><img id="img3" src="../images/pic1.jpg" width="100px"></a> 
+       <a href="#"><img id="img4" src="../images/pic2.jpg" width="100px"></a> 
+   </div> 
+</div>
+
+</body>
+</html>
